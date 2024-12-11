@@ -2,8 +2,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="350"
         x:Class="ApplicationManager.MainWindow"
         Title="ApplicationManager">
-    Welcome to Avalonia!
+    <Panel Margin="20">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+            <CheckBox>KKMAgent</CheckBox>
+            <CheckBox>JmSound</CheckBox>
+            <CheckBox>AnyDesk</CheckBox>
+            <CheckBox>SushkovTrayAgent</CheckBox>
+        </StackPanel>
+        
+        <DockPanel VerticalAlignment="Bottom">
+            <Button>?</Button>
+            <Button Margin="5, 0, 0, 0">Логи</Button>
+            <Button HorizontalAlignment="Right">Применить</Button>
+        </DockPanel>
+    </Panel>
 </Window>
